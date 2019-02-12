@@ -1,5 +1,17 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP EMCO-Q10-5
+D High Voltage Transformer
+K Transformer High-Voltage
+F https://www.xppower.com/Portals/0/pdfs/SF_Q_Series.pdf
+$ENDCMP
+#
+$CMP EMCO-Q50-5
+D High Voltage Transformer
+K Transformer High-Voltage
+F https://www.xppower.com/Portals/0/pdfs/SF_Q_Series.pdf
+$ENDCMP
+#
 $CMP INA233
 D  High-Side or Low-Side Measurement, Bidirectional Current and Power Monitor With I2C-, SMBus-, and PMBus-Compatible Interface
 K ADC I2C SMBus PMBus 16-Bit

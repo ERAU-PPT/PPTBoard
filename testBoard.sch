@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:testBoard-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -14,4 +13,250 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L PPTBoard-Custom-Parts:PIC18F47K40 U1
+U 1 1 5C62B06A
+P 5850 3600
+F 0 "U1" H 5850 5378 50  0000 C CNN
+F 1 "PIC18F47K40" H 5850 5287 50  0000 C CNN
+F 2 "" H 5200 5050 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/PIC18LF27_47K40-Data-Sheet-40001844E.pdf" H 5200 5050 50  0001 C CNN
+	1    5850 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 J2
+U 1 1 5C62B145
+P 3550 4650
+F 0 "J2" H 3470 4125 50  0000 C CNN
+F 1 "Conn_01x06" H 3470 4216 50  0000 C CNN
+F 2 "" H 3550 4650 50  0001 C CNN
+F 3 "~" H 3550 4650 50  0001 C CNN
+	1    3550 4650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6550 3500 7750 3500
+Wire Wire Line
+	7750 3500 7750 5800
+Wire Wire Line
+	7750 5800 5350 5800
+Wire Wire Line
+	4350 5800 4350 4850
+Wire Wire Line
+	4350 4850 3750 4850
+Wire Wire Line
+	3750 4750 4150 4750
+Text Label 4150 4750 2    50   ~ 0
+VDD
+Wire Wire Line
+	3750 4650 4150 4650
+Text Label 4150 4650 2    50   ~ 0
+GND
+$Comp
+L power:GND #PWR?
+U 1 1 5C62B2CA
+P 4150 4650
+F 0 "#PWR?" H 4150 4400 50  0001 C CNN
+F 1 "GND" V 4155 4522 50  0000 R CNN
+F 2 "" H 4150 4650 50  0001 C CNN
+F 3 "" H 4150 4650 50  0001 C CNN
+	1    4150 4650
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 3750 4350
+Text Label 3750 3200 0    50   ~ 0
+SCL
+Text Label 3750 3300 0    50   ~ 0
+SDA
+Wire Wire Line
+	3750 3200 4050 3200
+Wire Wire Line
+	3750 3300 4050 3300
+$Comp
+L Device:R_US RSCL1
+U 1 1 5C62CC0E
+P 4050 2750
+F 0 "RSCL1" H 3982 2704 50  0000 R CNN
+F 1 "R_US" H 3982 2795 50  0000 R CNN
+F 2 "" V 4090 2740 50  0001 C CNN
+F 3 "~" H 4050 2750 50  0001 C CNN
+	1    4050 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_US RSDA2
+U 1 1 5C62CC68
+P 4050 3550
+F 0 "RSDA2" H 4118 3596 50  0000 L CNN
+F 1 "R_US" H 4118 3505 50  0000 L CNN
+F 2 "" V 4090 3540 50  0001 C CNN
+F 3 "~" H 4050 3550 50  0001 C CNN
+	1    4050 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 3400 4050 3300
+Connection ~ 4050 3300
+Wire Wire Line
+	4050 3300 5150 3300
+Wire Wire Line
+	4050 3200 4050 2900
+Connection ~ 4050 3200
+Wire Wire Line
+	4050 3200 5150 3200
+Wire Wire Line
+	4950 4450 4950 3800
+Wire Wire Line
+	4950 3800 5150 3800
+Wire Wire Line
+	3750 4450 4950 4450
+Wire Wire Line
+	5150 3900 5050 3900
+Wire Wire Line
+	5050 3900 5050 4550
+Wire Wire Line
+	3750 4550 5050 4550
+$Comp
+L power:+5V #PWR?
+U 1 1 5C62DED9
+P 4050 2450
+F 0 "#PWR?" H 4050 2300 50  0001 C CNN
+F 1 "+5V" H 4065 2623 50  0000 C CNN
+F 2 "" H 4050 2450 50  0001 C CNN
+F 3 "" H 4050 2450 50  0001 C CNN
+	1    4050 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5C62DEF3
+P 4050 3800
+F 0 "#PWR?" H 4050 3650 50  0001 C CNN
+F 1 "+5V" H 4065 3973 50  0000 C CNN
+F 2 "" H 4050 3800 50  0001 C CNN
+F 3 "" H 4050 3800 50  0001 C CNN
+	1    4050 3800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4050 3700 4050 3800
+Wire Wire Line
+	4050 2450 4050 2600
+Text Label 4050 2550 0    50   ~ 0
++5V
+Text Label 4050 3800 2    50   ~ 0
++5V
+Wire Wire Line
+	5150 2800 4700 2800
+Text Label 4700 2800 0    50   ~ 0
+U16_CS
+Wire Wire Line
+	6550 3200 6950 3200
+Text Label 6950 3200 2    50   ~ 0
+U18_CS
+Wire Wire Line
+	5150 4700 4800 4700
+Text Label 4800 4700 0    50   ~ 0
+U17_CS
+$Comp
+L PPTBoard-Custom-Parts:MAX6816 U?
+U 1 1 5C630E78
+P 3800 6200
+F 0 "U?" H 3950 6450 50  0000 L CNN
+F 1 "MAX6816" H 3350 6450 50  0000 L CNN
+F 2 "" H 3650 6350 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/256/MAX6816-1514440.pdf" H 3650 6350 50  0001 C CNN
+	1    3800 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:DIODE DISCP
+U 1 1 5C63112E
+P 4650 6200
+F 0 "DISCP" H 4650 6465 50  0000 C CNN
+F 1 "DIODE" H 4650 6374 50  0000 C CNN
+F 2 "" H 4650 6200 50  0001 C CNN
+F 3 "" H 4650 6200 50  0001 C CNN
+	1    4650 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 6200 4200 6200
+Wire Wire Line
+	4850 6200 5350 6200
+Wire Wire Line
+	5350 6200 5350 5800
+Connection ~ 5350 5800
+Wire Wire Line
+	5350 5800 4350 5800
+$Comp
+L Device:R_US RMCLR
+U 1 1 5C631852
+P 4200 5700
+F 0 "RMCLR" H 4268 5746 50  0000 L CNN
+F 1 "R_US" H 4268 5655 50  0000 L CNN
+F 2 "" V 4240 5690 50  0001 C CNN
+F 3 "~" H 4200 5700 50  0001 C CNN
+	1    4200 5700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3800 5900 3800 5450
+Wire Wire Line
+	3800 5450 4200 5450
+Wire Wire Line
+	4200 5450 4200 5550
+Wire Wire Line
+	4200 5850 4200 6200
+Connection ~ 4200 6200
+Wire Wire Line
+	4200 6200 4450 6200
+$Comp
+L power:+5V #PWR?
+U 1 1 5C6321D9
+P 3800 5350
+F 0 "#PWR?" H 3800 5200 50  0001 C CNN
+F 1 "+5V" H 3815 5523 50  0000 C CNN
+F 2 "" H 3800 5350 50  0001 C CNN
+F 3 "" H 3800 5350 50  0001 C CNN
+	1    3800 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 5450 3800 5350
+Connection ~ 3800 5450
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5C632776
+P 2900 6200
+F 0 "SW?" H 2900 6485 50  0000 C CNN
+F 1 "SW_Push" H 2900 6394 50  0000 C CNN
+F 2 "" H 2900 6400 50  0001 C CNN
+F 3 "" H 2900 6400 50  0001 C CNN
+	1    2900 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 6200 3500 6200
+Wire Wire Line
+	2700 6200 2700 6600
+Wire Wire Line
+	2700 6600 3800 6600
+Wire Wire Line
+	3800 6600 3800 6500
+$Comp
+L power:GND #PWR?
+U 1 1 5C6343E1
+P 2700 6800
+F 0 "#PWR?" H 2700 6550 50  0001 C CNN
+F 1 "GND" V 2705 6672 50  0000 R CNN
+F 2 "" H 2700 6800 50  0001 C CNN
+F 3 "" H 2700 6800 50  0001 C CNN
+	1    2700 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 6600 2700 6800
+Connection ~ 2700 6600
 $EndSCHEMATC
