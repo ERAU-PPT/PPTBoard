@@ -1,7 +1,8 @@
 EESchema Schematic File Version 4
+LIBS:testBoard-cache
 EELAYER 26 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title ""
@@ -259,4 +260,208 @@ $EndComp
 Wire Wire Line
 	2700 6600 2700 6800
 Connection ~ 2700 6600
+$Comp
+L PPTBoard-Custom-Parts:MAX6675 U16
+U 1 1 5C670EE9
+P 13400 3950
+F 0 "U16" H 13550 4300 50  0000 L CNN
+F 1 "MAX6675" H 12950 4300 50  0000 L CNN
+F 2 "" H 13050 4150 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX6675.pdf" H 13050 4150 50  0001 C CNN
+	1    13400 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5C670FC8
+P 13400 3250
+F 0 "#PWR?" H 13400 3100 50  0001 C CNN
+F 1 "+5V" H 13415 3423 50  0000 C CNN
+F 2 "" H 13400 3250 50  0001 C CNN
+F 3 "" H 13400 3250 50  0001 C CNN
+	1    13400 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13400 3250 13400 3550
+Wire Wire Line
+	13400 4350 13400 4600
+$Comp
+L power:GND #PWR?
+U 1 1 5C671EE5
+P 13400 4600
+F 0 "#PWR?" H 13400 4350 50  0001 C CNN
+F 1 "GND" H 13405 4427 50  0000 C CNN
+F 2 "" H 13400 4600 50  0001 C CNN
+F 3 "" H 13400 4600 50  0001 C CNN
+	1    13400 4600
+	1    0    0    -1  
+$EndComp
+Text Label 12550 4050 0    50   ~ 0
+uC_SCK
+Wire Wire Line
+	12550 4050 13000 4050
+Wire Wire Line
+	13800 3950 14300 3950
+Text Label 14300 3950 2    50   ~ 0
+uC_SDI
+Wire Wire Line
+	13000 4150 12550 4150
+Text Label 12550 4150 0    50   ~ 0
+25
+$Comp
+L Device:Thermocouple TC3
+U 1 1 5C67427E
+P 12250 3750
+F 0 "TC3" H 12052 3727 50  0000 R CNN
+F 1 "Thermocouple" H 12052 3818 50  0000 R CNN
+F 2 "" H 11675 3800 50  0001 C CNN
+F 3 "~" H 11675 3800 50  0001 C CNN
+	1    12250 3750
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	12350 3650 12700 3650
+Wire Wire Line
+	12700 3650 12700 3750
+Wire Wire Line
+	12700 3750 13000 3750
+Wire Wire Line
+	13000 3850 12350 3850
+$Comp
+L PPTBoard-Custom-Parts:MAX6675 U17
+U 1 1 5C6761CB
+P 13400 5950
+F 0 "U17" H 13550 6300 50  0000 L CNN
+F 1 "MAX6675" H 12950 6300 50  0000 L CNN
+F 2 "" H 13050 6150 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX6675.pdf" H 13050 6150 50  0001 C CNN
+	1    13400 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5C6761D2
+P 13400 5250
+F 0 "#PWR?" H 13400 5100 50  0001 C CNN
+F 1 "+5V" H 13415 5423 50  0000 C CNN
+F 2 "" H 13400 5250 50  0001 C CNN
+F 3 "" H 13400 5250 50  0001 C CNN
+	1    13400 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13400 5250 13400 5550
+Wire Wire Line
+	13400 6350 13400 6600
+$Comp
+L power:GND #PWR?
+U 1 1 5C6761DA
+P 13400 6600
+F 0 "#PWR?" H 13400 6350 50  0001 C CNN
+F 1 "GND" H 13405 6427 50  0000 C CNN
+F 2 "" H 13400 6600 50  0001 C CNN
+F 3 "" H 13400 6600 50  0001 C CNN
+	1    13400 6600
+	1    0    0    -1  
+$EndComp
+Text Label 12550 6050 0    50   ~ 0
+uC_SCK
+Wire Wire Line
+	12550 6050 13000 6050
+Wire Wire Line
+	13800 5950 14300 5950
+Text Label 14300 5950 2    50   ~ 0
+uC_SDI
+Wire Wire Line
+	13000 6150 12550 6150
+Text Label 12550 6150 0    50   ~ 0
+26
+$Comp
+L Device:Thermocouple TC4
+U 1 1 5C6761E6
+P 12250 5750
+F 0 "TC4" H 12052 5727 50  0000 R CNN
+F 1 "Thermocouple" H 12052 5818 50  0000 R CNN
+F 2 "" H 11675 5800 50  0001 C CNN
+F 3 "~" H 11675 5800 50  0001 C CNN
+	1    12250 5750
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	12350 5650 12700 5650
+Wire Wire Line
+	12700 5650 12700 5750
+Wire Wire Line
+	12700 5750 13000 5750
+Wire Wire Line
+	13000 5850 12350 5850
+$Comp
+L PPTBoard-Custom-Parts:MAX6675 U18
+U 1 1 5C678CAA
+P 13350 8350
+F 0 "U18" H 13500 8700 50  0000 L CNN
+F 1 "MAX6675" H 12900 8700 50  0000 L CNN
+F 2 "" H 13000 8550 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX6675.pdf" H 13000 8550 50  0001 C CNN
+	1    13350 8350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5C678CB1
+P 13350 7650
+F 0 "#PWR?" H 13350 7500 50  0001 C CNN
+F 1 "+5V" H 13365 7823 50  0000 C CNN
+F 2 "" H 13350 7650 50  0001 C CNN
+F 3 "" H 13350 7650 50  0001 C CNN
+	1    13350 7650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13350 7650 13350 7950
+Wire Wire Line
+	13350 8750 13350 9000
+$Comp
+L power:GND #PWR?
+U 1 1 5C678CB9
+P 13350 9000
+F 0 "#PWR?" H 13350 8750 50  0001 C CNN
+F 1 "GND" H 13355 8827 50  0000 C CNN
+F 2 "" H 13350 9000 50  0001 C CNN
+F 3 "" H 13350 9000 50  0001 C CNN
+	1    13350 9000
+	1    0    0    -1  
+$EndComp
+Text Label 12500 8450 0    50   ~ 0
+uC_SCK
+Wire Wire Line
+	12500 8450 12950 8450
+Wire Wire Line
+	13750 8350 14250 8350
+Text Label 14250 8350 2    50   ~ 0
+uC_SDI
+Wire Wire Line
+	12950 8550 12500 8550
+Text Label 12500 8550 0    50   ~ 0
+27
+$Comp
+L Device:Thermocouple TC5
+U 1 1 5C678CC5
+P 12200 8150
+F 0 "TC5" H 12002 8127 50  0000 R CNN
+F 1 "Thermocouple" H 12002 8218 50  0000 R CNN
+F 2 "" H 11625 8200 50  0001 C CNN
+F 3 "~" H 11625 8200 50  0001 C CNN
+	1    12200 8150
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	12300 8050 12650 8050
+Wire Wire Line
+	12650 8050 12650 8150
+Wire Wire Line
+	12650 8150 12950 8150
+Wire Wire Line
+	12950 8250 12300 8250
 $EndSCHEMATC
