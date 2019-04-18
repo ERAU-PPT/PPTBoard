@@ -289,20 +289,7 @@ NoConn ~ 8700 3950
 NoConn ~ 7300 3650
 NoConn ~ 7300 3550
 NoConn ~ 7300 4850
-$Comp
-L Connector_Generic:Conn_01x03 Q1
-U 1 1 5CC2043D
-P 1400 5100
-F 0 "Q1" H 1318 4775 50  0000 C CNN
-F 1 "Conn_01x03" H 1318 4866 50  0000 C CNN
-F 2 "" H 1400 5100 50  0001 C CNN
-F 3 "~" H 1400 5100 50  0001 C CNN
-	1    1400 5100
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1600 5000 1800 5000
-Text GLabel 1800 5000 2    50   Input ~ 0
+Text GLabel 1700 4700 1    50   Input ~ 0
 GND
 Wire Wire Line
 	9050 2300 9050 2100
@@ -771,8 +758,6 @@ Wire Wire Line
 Connection ~ 1100 6700
 Wire Wire Line
 	1950 6700 1950 6850
-Wire Wire Line
-	1700 5100 1600 5100
 Wire Wire Line
 	14700 8100 14700 7850
 Wire Wire Line
@@ -1431,8 +1416,6 @@ PM_VIN
 Text GLabel 4600 950  1    50   Input ~ 0
 PM_VIN
 Wire Wire Line
-	1600 5200 1800 5200
-Wire Wire Line
 	1700 5500 1000 5500
 $Comp
 L Connector_Generic:Conn_01x02 J3
@@ -1440,13 +1423,11 @@ U 1 1 5D742565
 P 1900 5400
 F 0 "J3" H 1980 5392 50  0000 L CNN
 F 1 "Conn_01x02" H 1980 5301 50  0000 L CNN
-F 2 "" H 1900 5400 50  0001 C CNN
+F 2 "PPTBoard:SolderWirePad_1x02_P0.220in_Drill0.110in" H 1900 5400 50  0001 C CNN
 F 3 "~" H 1900 5400 50  0001 C CNN
 	1    1900 5400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1700 5100 1700 5400
 Wire Wire Line
 	2200 3100 2350 3100
 Wire Wire Line
@@ -1567,7 +1548,7 @@ Wire Wire Line
 	3450 7050 3700 7050
 Text GLabel 7050 3450 0    50   Input ~ 0
 RA5
-Text GLabel 1800 5200 2    50   Input ~ 0
+Text GLabel 1350 4950 0    50   Input ~ 0
 RA5
 Wire Wire Line
 	7050 3450 7300 3450
@@ -1944,4 +1925,21 @@ F 3 "~" H 11750 9150 50  0001 C CNN
 	1    11750 9150
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:Q_NMOS_GDS Q1
+U 1 1 5CBCE1A4
+P 1600 4950
+F 0 "Q1" H 1806 4904 50  0000 L CNN
+F 1 "SCT2450KEC" H 1806 4995 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-247-3_Vertical" H 1800 5050 50  0001 C CNN
+F 3 "~" H 1600 4950 50  0001 C CNN
+	1    1600 4950
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	1350 4950 1400 4950
+Wire Wire Line
+	1700 4700 1700 4750
+Wire Wire Line
+	1700 5400 1700 5150
 $EndSCHEMATC
