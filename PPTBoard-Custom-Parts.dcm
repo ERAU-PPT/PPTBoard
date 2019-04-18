@@ -1,0 +1,57 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP EMCO-Q10-5
+D High Voltage Transformer
+K Transformer High-Voltage
+F https://www.xppower.com/Portals/0/pdfs/SF_Q_Series.pdf
+$ENDCMP
+#
+$CMP EMCO-Q50-5
+D High Voltage Transformer
+K Transformer High-Voltage
+F https://www.xppower.com/Portals/0/pdfs/SF_Q_Series.pdf
+$ENDCMP
+#
+$CMP INA233
+D  High-Side or Low-Side Measurement, Bidirectional Current and Power Monitor With I2C-, SMBus-, and PMBus-Compatible Interface
+K ADC I2C SMBus PMBus 16-Bit
+F http://www.ti.com/lit/ds/symlink/ina233.pdf
+$ENDCMP
+#
+$CMP MAX5483
+D 10-Bit, Nonvolatile, Linear-Taper Digital Potentiometer TSSOP
+K Maxim SPI Potentiometer TSSOP
+F https://datasheets.maximintegrated.com/en/ds/MAX5481-MAX5484.pdf
+$ENDCMP
+#
+$CMP MAX6675
+D Cold-Junction-Compensated K-Thermocouple-to-Digital Converter (0°C to +1024°C)
+K Thermocouple SPI MAXIM
+F https://datasheets.maximintegrated.com/en/ds/MAX6675.pdf
+$ENDCMP
+#
+$CMP MAX6816
+D ±15kV ESD-Protected Single CMOS Switch Debouncer
+K Maxim Debouncer
+F https://www.mouser.com/datasheet/2/256/MAX6816-1514440.pdf
+$ENDCMP
+#
+$CMP PIC18F47K40
+D 128K FLASH, 3728 SRAM, 8-Bit
+K PIC Microchip TQFP
+F http://ww1.microchip.com/downloads/en/DeviceDoc/PIC18LF27_47K40-Data-Sheet-40001844E.pdf
+$ENDCMP
+#
+$CMP TPS2557
+D Precision Adjustable Current-Limited Power-Distribution Switches
+K Power Switch MOSFET
+F http://www.ti.com/lit/ds/symlink/tps2557.pdf
+$ENDCMP
+#
+$CMP WPMDM171050601
+D Variable Step Down Regulator Module
+K DC Power Step Regulator
+F https://katalog.we-online.com/pm/datasheet/171050601.pdf
+$ENDCMP
+#
+#End Doc Library
