@@ -1111,7 +1111,6 @@ $EndComp
 Wire Wire Line
 	11000 2100 11000 2150
 NoConn ~ 13300 1900
-NoConn ~ 14500 1700
 Text GLabel 14600 2050 3    50   Input ~ 0
 GND
 Wire Wire Line
