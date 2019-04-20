@@ -1422,7 +1422,7 @@ L Connector_Generic:Conn_01x02 J3
 U 1 1 5D742565
 P 1900 5400
 F 0 "J3" H 1980 5392 50  0000 L CNN
-F 1 "Conn_01x02" H 1980 5301 50  0000 L CNN
+F 1 "Thruster_Connection" H 1980 5301 50  0000 L CNN
 F 2 "PPTBoard:SolderWirePad_1x02_P0.220in_Drill0.110in" H 1900 5400 50  0001 C CNN
 F 3 "~" H 1900 5400 50  0001 C CNN
 	1    1900 5400
@@ -1781,18 +1781,8 @@ Wire Wire Line
 	4050 8650 4050 8550
 NoConn ~ 6600 9950
 NoConn ~ 6200 9950
-Text GLabel 2900 1600 0    50   Input ~ 0
-VCC
 Wire Wire Line
 	2900 1600 3000 1600
-Wire Notes Line
-	2650 1550 2950 1550
-Wire Notes Line
-	2950 1550 2950 1800
-Wire Notes Line
-	2950 1800 2650 1800
-Wire Notes Line
-	2650 1800 2650 1550
 $Comp
 L Device:C CD5
 U 1 1 5CAD2568
@@ -1942,4 +1932,12 @@ Wire Wire Line
 	1700 4700 1700 4750
 Wire Wire Line
 	1700 5400 1700 5150
+Text Label 1200 6700 0    50   ~ 0
+CAP_BANK_POSITIVE
+Text Label 1100 7250 0    50   ~ 0
+CAP_BANK_RETURN
+Text GLabel 2900 1600 0    50   Input ~ 0
+VCC
+Text Label 1700 5250 0    50   ~ 0
+Thruster_Control
 $EndSCHEMATC
