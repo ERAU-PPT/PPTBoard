@@ -1920,24 +1920,6 @@ Text Label 1100 7250 0    50   ~ 0
 CAP_BANK_RETURN
 Text GLabel 2900 1600 0    50   Input ~ 0
 VCC
-Text Label 1700 4850 0    50   ~ 0
+Text Label 1700 5250 0    50   ~ 0
 Thruster_Control
-Wire Wire Line
-	7050 2950 7300 2950
-Wire Wire Line
-	7050 3050 7300 3050
-Wire Wire Line
-	7050 3150 7300 3150
-Wire Wire Line
-	7300 3250 7050 3250
-Wire Wire Line
-	8700 3550 9400 3550
-Wire Wire Line
-	8700 3450 9200 3450
-Wire Wire Line
-	8700 3650 9200 3650
-Wire Wire Line
-	7050 3450 7300 3450
-Wire Wire Line
-	8700 3350 8800 3350
 $EndSCHEMATC
