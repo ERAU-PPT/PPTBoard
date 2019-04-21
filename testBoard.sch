@@ -14,24 +14,13 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L PPTBoard-Custom-Parts:PIC18F47K40 U1
-U 1 1 5C6EA128
-P 8000 4250
-F 0 "U1" H 8500 5800 50  0000 C CNN
-F 1 "PIC18F47K40" H 7550 5800 50  0000 C CNN
-F 2 "Package_QFP:TQFP-44-1EP_10x10mm_P0.8mm_EP4.5x4.5mm" H 7350 5700 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/PIC18LF27_47K40-Data-Sheet-40001844E.pdf" H 7350 5700 50  0001 C CNN
-	1    8000 4250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	8000 5750 8000 5950
-Text GLabel 8000 5950 3    50   Input ~ 0
+	8000 5750 8000 5850
+Text GLabel 8000 5850 3    50   Input ~ 0
 GND
 Wire Wire Line
-	8000 2650 8000 2400
-Text GLabel 8000 2400 1    50   Input ~ 0
+	8000 2650 8000 2550
+Text GLabel 8000 2550 1    50   Input ~ 0
 VCC
 $Comp
 L PPTBoard-Custom-Parts:INA233 U7
@@ -53,7 +42,7 @@ L Device:R RAL1
 U 1 1 5CAA3C0C
 P 3150 1600
 F 0 "RAL1" V 3050 1600 50  0000 C CNN
-F 1 "4.7k" V 3150 1550 50  0000 C CNN
+F 1 "4.7k" V 3150 1600 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 3080 1600 50  0001 C CNN
 F 3 "~" H 3150 1600 50  0001 C CNN
 	1    3150 1600
@@ -78,7 +67,7 @@ L Device:R RAL2
 U 1 1 5CAA5C0E
 P 1050 3200
 F 0 "RAL2" V 950 3200 50  0000 C CNN
-F 1 "4.7k" V 1050 3150 50  0000 C CNN
+F 1 "4.7k" V 1050 3200 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 980 3200 50  0001 C CNN
 F 3 "~" H 1050 3200 50  0001 C CNN
 	1    1050 3200
@@ -94,7 +83,7 @@ Wire Wire Line
 Text GLabel 750  3200 0    50   Input ~ 0
 VCC
 Wire Wire Line
-	7300 4350 7050 4350
+	7300 3050 7050 3050
 Wire Wire Line
 	7300 4450 7050 4450
 Wire Wire Line
@@ -165,126 +154,114 @@ Wire Wire Line
 Wire Wire Line
 	2950 5900 2950 6100
 Wire Wire Line
-	7300 4750 6350 4750
+	13300 2900 13400 2900
 $Comp
 L Device:LED_ALT D1
 U 1 1 5CB8CC18
-P 8300 8000
-F 0 "D1" V 8339 7882 50  0000 R CNN
-F 1 "LED_ALT" V 8248 7882 50  0000 R CNN
-F 2 "LED_SMD:LED_1206_3216Metric" H 8300 8000 50  0001 C CNN
-F 3 "~" H 8300 8000 50  0001 C CNN
-	1    8300 8000
-	0    -1   -1   0   
+P 13600 4150
+F 0 "D1" V 13639 4032 50  0000 R CNN
+F 1 "PWR" V 13548 4032 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 13600 4150 50  0001 C CNN
+F 3 "~" H 13600 4150 50  0001 C CNN
+	1    13600 4150
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R RLED1
 U 1 1 5CB8CC20
-P 8300 8500
-F 0 "RLED1" H 8230 8454 50  0000 R CNN
-F 1 "100" H 8230 8545 50  0000 R CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 8230 8500 50  0001 C CNN
-F 3 "~" H 8300 8500 50  0001 C CNN
-	1    8300 8500
-	-1   0    0    1   
+P 14100 4150
+F 0 "RLED1" V 14000 4250 50  0000 R CNN
+F 1 "100" V 14100 4250 50  0000 R CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 14030 4150 50  0001 C CNN
+F 3 "~" H 14100 4150 50  0001 C CNN
+	1    14100 4150
+	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8300 8350 8300 8150
-Text GLabel 8300 8800 3    50   Input ~ 0
+	13950 4150 13750 4150
+Text GLabel 14400 4150 2    50   Input ~ 0
 GND
 Wire Wire Line
-	8300 8800 8300 8650
-Text GLabel 8300 7600 1    50   Input ~ 0
+	14400 4150 14250 4150
+Text GLabel 13200 4150 0    50   Input ~ 0
 VCC
 Wire Wire Line
-	8300 7600 8300 7850
-Text Label 8300 8250 0    50   ~ 0
+	13200 4150 13450 4150
+Text Label 13900 4150 3    50   ~ 0
 PWR_LED
 $Comp
 L Device:LED_ALT D2
 U 1 1 5CB98D19
-P 9500 3150
-F 0 "D2" H 9493 3366 50  0000 C CNN
-F 1 "LED_RDY" H 9493 3275 50  0000 C CNN
-F 2 "LED_SMD:LED_1206_3216Metric" H 9500 3150 50  0001 C CNN
-F 3 "~" H 9500 3150 50  0001 C CNN
-	1    9500 3150
-	-1   0    0    -1  
+P 13550 3750
+F 0 "D2" V 13500 3600 50  0000 C CNN
+F 1 "RDY" V 13600 3600 50  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 13550 3750 50  0001 C CNN
+F 3 "~" H 13550 3750 50  0001 C CNN
+	1    13550 3750
+	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	9200 3150 9350 3150
 $Comp
 L Device:R RLED2
 U 1 1 5CB98D21
-P 9950 3150
-F 0 "RLED2" V 10157 3150 50  0000 C CNN
-F 1 "100" V 10066 3150 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 9880 3150 50  0001 C CNN
-F 3 "~" H 9950 3150 50  0001 C CNN
-	1    9950 3150
+P 14000 3750
+F 0 "RLED2" V 14207 3750 50  0000 C CNN
+F 1 "100" V 14000 3750 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 13930 3750 50  0001 C CNN
+F 3 "~" H 14000 3750 50  0001 C CNN
+	1    14000 3750
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	9800 3150 9650 3150
-Text GLabel 10200 3150 2    50   Input ~ 0
+	13850 3750 13700 3750
+Text GLabel 14250 3750 2    50   Input ~ 0
 GND
 Wire Wire Line
-	9200 3150 9200 3450
-Wire Wire Line
-	10200 3150 10100 3150
+	14250 3750 14150 3750
 $Comp
 L Device:R RLED4
 U 1 1 5CBB08E4
-P 9950 3550
-F 0 "RLED4" V 10157 3550 50  0000 C CNN
-F 1 "100" V 10066 3550 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 9880 3550 50  0001 C CNN
-F 3 "~" H 9950 3550 50  0001 C CNN
-	1    9950 3550
+P 13950 3300
+F 0 "RLED4" V 14157 3300 50  0000 C CNN
+F 1 "100" V 13950 3300 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 13880 3300 50  0001 C CNN
+F 3 "~" H 13950 3300 50  0001 C CNN
+	1    13950 3300
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	9800 3550 9700 3550
-Text GLabel 10200 3550 2    50   Input ~ 0
+	13800 3300 13700 3300
+Text GLabel 14200 3300 2    50   Input ~ 0
 GND
 Wire Wire Line
-	10200 3550 10100 3550
+	14200 3300 14100 3300
 $Comp
 L Device:LED_ALT D5
 U 1 1 5CBF3BEF
-P 9550 3950
-F 0 "D5" H 9543 4166 50  0000 C CNN
-F 1 "LED_DIA" H 9543 4075 50  0000 C CNN
-F 2 "LED_SMD:LED_1206_3216Metric" H 9550 3950 50  0001 C CNN
-F 3 "~" H 9550 3950 50  0001 C CNN
-	1    9550 3950
-	-1   0    0    -1  
+P 13550 2550
+F 0 "D5" V 13600 2400 50  0000 C CNN
+F 1 "DIA" V 13500 2400 50  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 13550 2550 50  0001 C CNN
+F 3 "~" H 13550 2550 50  0001 C CNN
+	1    13550 2550
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R RLED5
 U 1 1 5CBF3BF5
-P 9950 3950
-F 0 "RLED5" V 10157 3950 50  0000 C CNN
-F 1 "100" V 10066 3950 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 9880 3950 50  0001 C CNN
-F 3 "~" H 9950 3950 50  0001 C CNN
-	1    9950 3950
+P 14000 2550
+F 0 "RLED5" V 14207 2550 50  0000 C CNN
+F 1 "100" V 14000 2550 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 13930 2550 50  0001 C CNN
+F 3 "~" H 14000 2550 50  0001 C CNN
+	1    14000 2550
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	9800 3950 9700 3950
-Text GLabel 10200 3950 2    50   Input ~ 0
+	13850 2550 13700 2550
+Text GLabel 14250 2550 2    50   Input ~ 0
 GND
 Wire Wire Line
-	10200 3950 10100 3950
-NoConn ~ 7300 5450
-NoConn ~ 7300 3850
-NoConn ~ 7300 3350
-NoConn ~ 8700 3850
-NoConn ~ 8700 3950
-NoConn ~ 7300 3650
-NoConn ~ 7300 3550
-NoConn ~ 7300 4850
+	14250 2550 14150 2550
 Text GLabel 1700 4300 1    50   Input ~ 0
 GND
 Wire Wire Line
@@ -322,8 +299,6 @@ Wire Wire Line
 	8450 1650 8000 1650
 Wire Wire Line
 	8550 1800 8650 1800
-Wire Wire Line
-	7300 5250 7150 5250
 $Comp
 L PPTBoard-Custom-Parts:MAX5483 U5
 U 1 1 5CD91F0C
@@ -351,13 +326,11 @@ Connection ~ 10550 9400
 Wire Wire Line
 	9950 8500 9850 8500
 Wire Wire Line
-	8800 3250 8700 3250
+	7050 3650 7300 3650
 Wire Wire Line
 	9850 8700 9950 8700
 Wire Wire Line
 	9950 8900 9850 8900
-Wire Wire Line
-	8800 3050 8700 3050
 Wire Wire Line
 	9850 9100 9950 9100
 Text GLabel 9850 9100 0    50   Input ~ 0
@@ -480,7 +453,7 @@ U 1 1 5D11EA49
 P 6200 8750
 F 0 "CSPK1" H 6315 8796 50  0000 L CNN
 F 1 "2200p" H 6315 8705 50  0000 L CNN
-F 2 "Capacitor_SMD:C_Elec_6.3x7.7" H 6238 8600 50  0001 C CNN
+F 2 "Capacitor_SMD:C_2220_5650Metric" H 6238 8600 50  0001 C CNN
 F 3 "~" H 6200 8750 50  0001 C CNN
 	1    6200 8750
 	1    0    0    -1  
@@ -540,7 +513,6 @@ F 3 "https://www.xppower.com/Portals/0/pdfs/SF_Q_Series.pdf" H 1950 7250 50  000
 	-1   0    0    -1  
 $EndComp
 NoConn ~ 3150 7250
-NoConn ~ 1950 7050
 Wire Wire Line
 	1950 7250 1950 7500
 Text GLabel 1950 7500 3    50   Input ~ 0
@@ -799,7 +771,7 @@ L Device:R RIS1
 U 1 1 5D9819A1
 P 4850 1100
 F 0 "RIS1" V 4950 1100 50  0000 C CNN
-F 1 "0.01" V 4850 1050 50  0000 C CNN
+F 1 "0.01" V 4850 1100 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 4780 1100 50  0001 C CNN
 F 3 "~" H 4850 1100 50  0001 C CNN
 	1    4850 1100
@@ -861,21 +833,19 @@ Wire Wire Line
 Connection ~ 2300 2700
 Text GLabel 9850 8900 0    50   Input ~ 0
 U5_DIN
-Text GLabel 8800 3050 2    50   Input ~ 0
-U5_DIN
 Text GLabel 9850 8700 0    50   Input ~ 0
 SCLK
 Text GLabel 9850 8500 0    50   Input ~ 0
 U5_CS
-Text GLabel 8800 3250 2    50   Input ~ 0
+Text GLabel 7050 3650 0    50   Input ~ 0
 U5_CS
-Text GLabel 7050 2950 0    50   Input ~ 0
-U12_FAULT
-Text GLabel 7050 3250 0    50   Input ~ 0
-U14_EN
 Text GLabel 7050 3150 0    50   Input ~ 0
+U12_FAULT
+Text GLabel 7150 4850 0    50   Input ~ 0
+U14_EN
+Text GLabel 7050 3250 0    50   Input ~ 0
 U12_EN
-Text GLabel 7050 3050 0    50   Input ~ 0
+Text GLabel 7150 4950 0    50   Input ~ 0
 U14_FAULT
 Text GLabel 7050 4450 0    50   Input ~ 0
 ICSPCLK
@@ -885,7 +855,7 @@ Text GLabel 8800 4150 2    50   Input ~ 0
 MCLR
 Wire Wire Line
 	8700 4150 8800 4150
-Text GLabel 7150 5250 0    50   Input ~ 0
+Text GLabel 7150 4750 0    50   Input ~ 0
 U11_ALERT
 Text GLabel 8550 1900 0    50   Input ~ 0
 U16_CS
@@ -895,19 +865,11 @@ Wire Wire Line
 	7150 5350 7300 5350
 Wire Wire Line
 	8550 1900 8650 1900
-Text GLabel 7050 4150 0    50   Input ~ 0
-U7_ALERT
-Wire Wire Line
-	7050 4150 7300 4150
 Text GLabel 3400 1700 3    50   Input ~ 0
 U7_ALERT
-Text GLabel 7050 4250 0    50   Input ~ 0
-U8_ALERT
-Wire Wire Line
-	7050 4250 7300 4250
 Text GLabel 1300 3350 0    50   Input ~ 0
 U8_ALERT
-Text GLabel 7050 4350 0    50   Input ~ 0
+Text GLabel 7050 2950 0    50   Input ~ 0
 U9_ALERT
 Text GLabel 2500 6200 1    50   Input ~ 0
 U9_ALERT
@@ -918,7 +880,7 @@ Wire Wire Line
 Connection ~ 2500 6400
 Wire Wire Line
 	2500 6400 3050 6400
-Text GLabel 8800 3150 2    50   Input ~ 0
+Text GLabel 8800 3950 2    50   Input ~ 0
 SCLK
 Text GLabel 8550 1800 0    50   Input ~ 0
 SCLK
@@ -934,7 +896,7 @@ F 3 "https://datasheets.maximintegrated.com/en/ds/MAX6675.pdf" H 8700 1900 50  0
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8700 3150 8800 3150
+	8700 3950 8800 3950
 Text GLabel 8800 2950 2    50   Input ~ 0
 U7_SD
 Text GLabel 9900 1700 2    50   Input ~ 0
@@ -946,13 +908,13 @@ Wire Wire Line
 $Comp
 L Device:LED_ALT D4
 U 1 1 5CBB08DE
-P 9550 3550
-F 0 "D4" H 9543 3766 50  0000 C CNN
-F 1 "LED_ERR" H 9543 3675 50  0000 C CNN
-F 2 "LED_SMD:LED_1206_3216Metric" H 9550 3550 50  0001 C CNN
-F 3 "~" H 9550 3550 50  0001 C CNN
-	1    9550 3550
-	-1   0    0    -1  
+P 13550 3300
+F 0 "D4" V 13500 3150 50  0000 C CNN
+F 1 "ERR" V 13600 3150 50  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 13550 3300 50  0001 C CNN
+F 3 "~" H 13550 3300 50  0001 C CNN
+	1    13550 3300
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	11500 5850 11500 5750
@@ -1099,7 +1061,6 @@ $EndComp
 Wire Wire Line
 	10850 5550 10850 5600
 NoConn ~ 13150 5350
-NoConn ~ 14350 5150
 Text GLabel 14450 5500 3    50   Input ~ 0
 GND
 Wire Wire Line
@@ -1121,7 +1082,7 @@ U 1 1 5CD43458
 P 14600 5150
 F 0 "CSPK2" H 14715 5196 50  0000 L CNN
 F 1 "2200p" H 14715 5105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_Elec_6.3x7.7" H 14638 5000 50  0001 C CNN
+F 2 "Capacitor_SMD:C_2220_5650Metric" H 14638 5000 50  0001 C CNN
 F 3 "~" H 14600 5150 50  0001 C CNN
 	1    14600 5150
 	1    0    0    -1  
@@ -1164,7 +1125,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/ina233.pdf" H 11500 5250 50  0001 C CNN
 $EndComp
 Text GLabel 12200 8050 1    50   Input ~ 0
 U4_EN
-Text GLabel 8800 3350 2    50   Input ~ 0
+Text GLabel 7050 3450 0    50   Input ~ 0
 U4_EN
 Text GLabel 8800 4050 2    50   Input ~ 0
 RE2
@@ -1487,34 +1448,34 @@ Wire Wire Line
 	1800 3400 1800 3450
 Wire Wire Line
 	4000 1950 4000 1800
-Text GLabel 5450 4750 0    50   Input ~ 0
+Text GLabel 14300 2900 2    50   Input ~ 0
 GND
 $Comp
 L Device:R RLED3
 U 1 1 5CB83E5E
-P 5750 4750
-F 0 "RLED3" V 5850 4750 50  0000 C CNN
-F 1 "100" V 5750 4800 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 5680 4750 50  0001 C CNN
-F 3 "~" H 5750 4750 50  0001 C CNN
-	1    5750 4750
-	0    -1   -1   0   
+P 14000 2900
+F 0 "RLED3" V 14100 2900 50  0000 C CNN
+F 1 "100" V 14000 2900 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 13930 2900 50  0001 C CNN
+F 3 "~" H 14000 2900 50  0001 C CNN
+	1    14000 2900
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED_ALT D3
 U 1 1 5CB80251
-P 6200 4750
-F 0 "D3" V 6250 4650 50  0000 R CNN
-F 1 "LED_DIA" V 6150 4700 50  0000 R CNN
-F 2 "LED_SMD:LED_1206_3216Metric" H 6200 4750 50  0001 C CNN
-F 3 "~" H 6200 4750 50  0001 C CNN
-	1    6200 4750
-	1    0    0    -1  
+P 13550 2900
+F 0 "D3" V 13600 2800 50  0000 R CNN
+F 1 "DIA2" V 13500 2850 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 13550 2900 50  0001 C CNN
+F 3 "~" H 13550 2900 50  0001 C CNN
+	1    13550 2900
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	5450 4750 5600 4750
+	14300 2900 14150 2900
 Wire Wire Line
-	5900 4750 6050 4750
+	13850 2900 13700 2900
 Wire Wire Line
 	4700 6850 4700 6300
 Wire Wire Line
@@ -1534,14 +1495,10 @@ Wire Wire Line
 Connection ~ 3450 7050
 Wire Wire Line
 	3450 7050 3700 7050
-Text GLabel 7050 3450 0    50   Input ~ 0
-THRUST_CONTROL
 Text GLabel 1350 4550 0    50   Input ~ 0
 THRUST_CONTROL
 Wire Wire Line
-	9200 3650 9200 3950
-Wire Wire Line
-	9200 3950 9400 3950
+	13350 2550 13400 2550
 Text GLabel 13400 8700 2    50   Input ~ 0
 U4_VOUT
 Text GLabel 15700 8400 1    50   Input ~ 0
@@ -1579,8 +1536,6 @@ Wire Wire Line
 	4000 700  4000 800 
 NoConn ~ 5200 1800
 NoConn ~ 5700 1800
-NoConn ~ 5700 1700
-NoConn ~ 5700 1600
 Wire Wire Line
 	1800 2250 1800 2300
 Wire Wire Line
@@ -1699,7 +1654,7 @@ Wire Wire Line
 	1900 8650 1800 8650
 Text GLabel 1800 8650 0    50   Input ~ 0
 VCC
-Text GLabel 7100 4950 0    50   Input ~ 0
+Text GLabel 7050 3050 0    50   Input ~ 0
 U10_ALERT
 Text GLabel 7150 5150 0    50   Input ~ 0
 SDA1
@@ -1744,7 +1699,7 @@ $EndComp
 Wire Wire Line
 	7150 5150 7300 5150
 Wire Wire Line
-	7300 4950 7100 4950
+	7300 4950 7150 4950
 Text GLabel 7150 5050 0    50   Input ~ 0
 SCL1
 Wire Wire Line
@@ -1925,19 +1880,134 @@ Thruster_Control
 Wire Wire Line
 	7050 2950 7300 2950
 Wire Wire Line
-	7050 3050 7300 3050
+	7150 4850 7300 4850
+Wire Wire Line
+	7150 4750 7300 4750
+Wire Wire Line
+	7300 3450 7050 3450
+Text Label 7850 9950 0    50   ~ 0
+DBNC_DDE_PRTCTD
+Text Label 2350 9700 0    50   ~ 0
+U12_ILIM
+Text Label 11650 6800 0    50   ~ 0
+U14_ILIM
+Text Label 8050 1450 0    50   ~ 0
+TC-
+Text Label 8050 1650 0    50   ~ 0
+TC+
+Text Label 5850 8550 0    50   ~ 0
+SPK1
+Text Label 14450 4950 0    50   ~ 0
+SPK2
+Text Label 5350 1100 0    50   ~ 0
+U7_DIAG_NET
+Text Label 15200 9150 0    50   ~ 0
+U3-FB
+Text Label 11950 8700 0    50   ~ 0
+U4_FB
+Text Label 13800 2550 1    50   ~ 0
+R_DIA
+Text Label 13750 3300 3    50   ~ 0
+R_ERR
+Text Label 13850 3750 1    50   ~ 0
+R_RDY
+Text Label 13750 2900 3    50   ~ 0
+R_DIA2
+Text Label 3600 6850 0    50   ~ 0
+U6_VIN
+Text Label 3650 8550 0    50   ~ 0
+U13_VIN
+Text Label 3600 9550 1    50   ~ 0
+U12_VOUT
+Text Label 12450 6300 1    50   ~ 0
+U14_OUT
+Text Label 12450 4950 0    50   ~ 0
+U15_VIN
+Wire Wire Line
+	7300 3250 7050 3250
+Text GLabel 7050 4150 0    50   Input ~ 0
+U8_ALERT
+Wire Wire Line
+	7050 4150 7300 4150
+Wire Wire Line
+	7300 5450 7150 5450
+$Comp
+L PPTBoard-Custom-Parts:PIC18F47K40 U1
+U 1 1 5C6EA128
+P 8000 4250
+F 0 "U1" H 8500 5800 50  0000 C CNN
+F 1 "PIC18F47K40" H 7550 5800 50  0000 C CNN
+F 2 "Package_QFP:TQFP-44-1EP_10x10mm_P0.8mm_EP4.5x4.5mm" H 7350 5700 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/PIC18LF27_47K40-Data-Sheet-40001844E.pdf" H 7350 5700 50  0001 C CNN
+	1    8000 4250
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	7050 3150 7300 3150
 Wire Wire Line
-	7300 3250 7050 3250
+	14300 8500 14000 8500
 Wire Wire Line
-	8700 3550 9400 3550
+	14000 8500 14000 8200
+Text GLabel 14000 8200 1    50   Input ~ 0
+U3_EN
+Text GLabel 7050 3350 0    50   Input ~ 0
+U3_EN
 Wire Wire Line
-	8700 3450 9200 3450
+	7300 3350 7050 3350
 Wire Wire Line
-	8700 3650 9200 3650
+	7050 4250 7300 4250
+Text GLabel 7050 4250 0    50   Input ~ 0
+U7_ALERT
 Wire Wire Line
-	7050 3450 7300 3450
+	13300 3300 13400 3300
+Text GLabel 13300 2900 0    50   Input ~ 0
+DIA2_LED
+Text GLabel 13300 3300 0    50   Input ~ 0
+ERR_LED
+Text GLabel 13350 3750 0    50   Input ~ 0
+RDY_LED
+Text GLabel 8800 3550 2    50   Input ~ 0
+RDY_LED
+Text GLabel 8800 3450 2    50   Input ~ 0
+ERR_LED
 Wire Wire Line
-	8700 3350 8800 3350
+	8800 3550 8700 3550
+Wire Wire Line
+	8700 3450 8800 3450
+Text GLabel 13350 2550 0    50   Input ~ 0
+DIA_LED
+Text GLabel 7150 5450 0    50   Input ~ 0
+DIA_LED
+Wire Wire Line
+	8800 3350 8700 3350
+Text GLabel 8800 3350 2    50   Input ~ 0
+DIA2_LED
+Wire Wire Line
+	13350 3750 13400 3750
+Text GLabel 7150 5250 0    50   Input ~ 0
+THRUST_CONTROL
+Wire Wire Line
+	7150 5250 7300 5250
+Text GLabel 8800 3850 2    50   Input ~ 0
+U5_DIN
+Wire Wire Line
+	8800 3850 8700 3850
+Wire Notes Line
+	13800 7900 14150 7900
+Wire Notes Line
+	14150 7900 14150 8550
+Wire Notes Line
+	13800 7900 13800 8550
+Wire Notes Line
+	13800 8550 14150 8550
+Text Notes 13500 8550 0    50   ~ 0
+Check w/\n Dr. White\n if needed
+Text GLabel 5850 1700 2    50   Input ~ 0
+SDA1
+Text GLabel 5850 1600 2    50   Input ~ 0
+SCL1
+Wire Wire Line
+	5850 1700 5700 1700
+Wire Wire Line
+	5700 1600 5850 1600
 $EndSCHEMATC
