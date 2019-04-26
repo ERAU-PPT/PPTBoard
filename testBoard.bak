@@ -837,13 +837,13 @@ Text GLabel 9850 8700 0    50   Input ~ 0
 SCLK
 Text GLabel 9850 8500 0    50   Input ~ 0
 U5_CS
-Text GLabel 7050 3650 0    50   Input ~ 0
+Text GLabel 8800 3850 2    50   Input ~ 0
 U5_CS
-Text GLabel 7050 3150 0    50   Input ~ 0
+Text GLabel 7050 3250 0    50   Input ~ 0
 U12_FAULT
 Text GLabel 7150 4850 0    50   Input ~ 0
 U14_EN
-Text GLabel 7050 3250 0    50   Input ~ 0
+Text GLabel 7050 3150 0    50   Input ~ 0
 U12_EN
 Text GLabel 7150 4950 0    50   Input ~ 0
 U14_FAULT
@@ -859,7 +859,7 @@ Text GLabel 7150 4750 0    50   Input ~ 0
 U11_ALERT
 Text GLabel 8550 1900 0    50   Input ~ 0
 U16_CS
-Text GLabel 7150 5350 0    50   Input ~ 0
+Text GLabel 7150 5250 0    50   Input ~ 0
 U16_CS
 Wire Wire Line
 	7150 5350 7300 5350
@@ -869,7 +869,7 @@ Text GLabel 3400 1700 3    50   Input ~ 0
 U7_ALERT
 Text GLabel 1300 3350 0    50   Input ~ 0
 U8_ALERT
-Text GLabel 7050 2950 0    50   Input ~ 0
+Text GLabel 7050 4350 0    50   Input ~ 0
 U9_ALERT
 Text GLabel 2500 6200 1    50   Input ~ 0
 U9_ALERT
@@ -880,7 +880,7 @@ Wire Wire Line
 Connection ~ 2500 6400
 Wire Wire Line
 	2500 6400 3050 6400
-Text GLabel 8800 3950 2    50   Input ~ 0
+Text GLabel 7050 3450 0    50   Input ~ 0
 SCLK
 Text GLabel 8550 1800 0    50   Input ~ 0
 SCLK
@@ -1124,8 +1124,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/ina233.pdf" H 11500 5250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 12200 8050 1    50   Input ~ 0
-U4_EN
-Text GLabel 7050 3450 0    50   Input ~ 0
 U4_EN
 Text GLabel 8800 4050 2    50   Input ~ 0
 RE2
@@ -1545,7 +1543,7 @@ Wire Wire Line
 Connection ~ 1800 2300
 Wire Wire Line
 	1800 2300 1800 2400
-Text GLabel 7050 3950 0    50   Input ~ 0
+Text GLabel 7150 5050 0    50   Input ~ 0
 SCL2
 Text GLabel 10950 5350 0    50   Input ~ 0
 SCL2
@@ -1582,7 +1580,7 @@ Wire Wire Line
 	5600 5950 5700 5950
 Wire Wire Line
 	7300 4050 7050 4050
-Text GLabel 7050 4050 0    50   Input ~ 0
+Text GLabel 7150 5150 0    50   Input ~ 0
 SDA2
 Text GLabel 6200 5950 2    50   Input ~ 0
 SCL2
@@ -1656,8 +1654,6 @@ Text GLabel 1800 8650 0    50   Input ~ 0
 VCC
 Text GLabel 7050 3050 0    50   Input ~ 0
 U10_ALERT
-Text GLabel 7150 5150 0    50   Input ~ 0
-SDA1
 $Comp
 L Device:R RSCL1
 U 1 1 62A10D59
@@ -1700,8 +1696,6 @@ Wire Wire Line
 	7150 5150 7300 5150
 Wire Wire Line
 	7300 4950 7150 4950
-Text GLabel 7150 5050 0    50   Input ~ 0
-SCL1
 Wire Wire Line
 	7150 5050 7300 5050
 Text GLabel 5050 1700 0    50   Input ~ 0
@@ -1875,10 +1869,6 @@ Text Label 1100 7250 0    50   ~ 0
 CAP_BANK_RETURN
 Text GLabel 2900 1600 0    50   Input ~ 0
 VCC
-Text Label 1700 4850 0    50   ~ 0
-Thruster_Control
-Wire Wire Line
-	7050 2950 7300 2950
 Wire Wire Line
 	7150 4850 7300 4850
 Wire Wire Line
@@ -1950,10 +1940,8 @@ Wire Wire Line
 	14000 8500 14000 8200
 Text GLabel 14000 8200 1    50   Input ~ 0
 U3_EN
-Text GLabel 7050 3350 0    50   Input ~ 0
+Text GLabel 7000 2950 0    50   Input ~ 0
 U3_EN
-Wire Wire Line
-	7300 3350 7050 3350
 Wire Wire Line
 	7050 4250 7300 4250
 Text GLabel 7050 4250 0    50   Input ~ 0
@@ -1984,14 +1972,10 @@ Text GLabel 8800 3350 2    50   Input ~ 0
 DIA2_LED
 Wire Wire Line
 	13350 3750 13400 3750
-Text GLabel 7150 5250 0    50   Input ~ 0
+Text GLabel 7150 5350 0    50   Input ~ 0
 THRUST_CONTROL
 Wire Wire Line
 	7150 5250 7300 5250
-Text GLabel 8800 3850 2    50   Input ~ 0
-U5_DIN
-Wire Wire Line
-	8800 3850 8700 3850
 Wire Notes Line
 	13800 7900 14150 7900
 Wire Notes Line
@@ -2002,12 +1986,42 @@ Wire Notes Line
 	13800 8550 14150 8550
 Text Notes 13500 8550 0    50   ~ 0
 Check w/\n Dr. White\n if needed
-Text GLabel 5850 1600 2    50   Input ~ 0
-SDA1
 Text GLabel 5850 1700 2    50   Input ~ 0
+SDA1
+Text GLabel 5850 1600 2    50   Input ~ 0
 SCL1
 Wire Wire Line
 	5850 1700 5700 1700
 Wire Wire Line
 	5700 1600 5850 1600
+Text Label 1700 4850 0    50   ~ 0
+Thrust_Connector
+Wire Wire Line
+	7050 4350 7300 4350
+Wire Wire Line
+	7000 2950 7300 2950
+Wire Wire Line
+	7300 3350 7050 3350
+Wire Wire Line
+	8800 3850 8700 3850
+Text GLabel 7050 3350 0    50   Input ~ 0
+U5_DIN
+Text GLabel 8800 3950 2    50   Input ~ 0
+U4_EN
+Text GLabel 7050 3950 0    50   Input ~ 0
+SCL1
+Text GLabel 7050 4050 0    50   Input ~ 0
+SDA1
+Text GLabel 13750 5650 3    50   Input ~ 0
+GND
+Wire Wire Line
+	13750 5650 13750 5550
+Text GLabel 4950 9400 3    50   Input ~ 0
+GND
+Wire Wire Line
+	4950 9400 4950 9150
+Wire Wire Line
+	2550 7450 2550 7550
+Text GLabel 2550 7550 3    50   Input ~ 0
+GND
 $EndSCHEMATC

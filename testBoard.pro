@@ -1,4 +1,4 @@
-update=4/21/2019 01:10:27
+update=4/25/2019 19:07:16
 version=1
 last_client=kicad
 [cvpcb]
@@ -70,7 +70,7 @@ SolderPasteRatio=-0
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/1]
 Name=10mil
-Clearance=0
+Clearance=0.127
 TrackWidth=0.254
 ViaDiameter=0.508
 ViaDrill=0.254
@@ -81,7 +81,7 @@ dPairGap=0.254
 dPairViaGap=0.25
 [pcbnew/Netclasses/2]
 Name=12mil
-Clearance=0
+Clearance=0.254
 TrackWidth=0.3048
 ViaDiameter=0.6096
 ViaDrill=0.3048
@@ -92,7 +92,7 @@ dPairGap=0.254
 dPairViaGap=0.25
 [pcbnew/Netclasses/3]
 Name=20mil
-Clearance=0
+Clearance=0.254
 TrackWidth=0.508
 ViaDiameter=1.016
 ViaDrill=0.508
@@ -103,7 +103,7 @@ dPairGap=0.254
 dPairViaGap=0.25
 [pcbnew/Netclasses/4]
 Name=40mil
-Clearance=0
+Clearance=0.254
 TrackWidth=1.016
 ViaDiameter=2.032
 ViaDrill=1.016
@@ -114,7 +114,7 @@ dPairGap=0.254
 dPairViaGap=0.25
 [pcbnew/Netclasses/5]
 Name=60mil
-Clearance=0
+Clearance=0.254
 TrackWidth=1.524
 ViaDiameter=3.048
 ViaDrill=1.524
